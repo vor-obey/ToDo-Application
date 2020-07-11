@@ -1,0 +1,47 @@
+.todo-item {
+    font-size: 24px;
+    border-bottom: 1px solid #ededed;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 16px 0 16px;
+    cursor: pointer;
+    justify-content: space-between;
+    position: relative;
+}
+
+.text {
+    font-family: 'Fondamento', cursive;
+    margin-left: 20px;
+}
+.todo-item__text{
+    display: flex;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.fa-times {
+    transition: all .3s ease;
+    color: rgba(175, 47, 47, 0.15);
+}
+
+.mark {
+    position: absolute;
+    left: 20px;
+
+}
+
+.todo-item:hover .fa-times {
+    color: rgba(175, 47, 47, 0.9);
+    transform: rotate(90deg);
+}
+
+
+.todo-item img{
+    width: 30px;
+    height: 30px;
+}
