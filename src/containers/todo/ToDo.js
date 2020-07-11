@@ -62,7 +62,7 @@ class ToDo extends Component {
     }
 }
 
-export default connect(({tasks, filters}) => ({
+export default connect(({ tasks, filters }) => ({
     tasks,
     filters,
 }), {addTast, removeTask, completeTask, changeFilter})(ToDo);
